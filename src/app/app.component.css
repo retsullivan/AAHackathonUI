@@ -1,0 +1,19 @@
+.top{
+    background-color: #114CA0;
+    height: 150px;
+    background-size:cover;
+    padding-left:10px;
+}
+
+.swlogo{
+    height:80%;
+    width: auto;
+    padding:15px
+    
+}
+
+.bottom{
+    align-content: center;
+    background-color: white;
+    color:#114CA0;
+}

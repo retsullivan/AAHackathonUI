@@ -9,11 +9,29 @@
     height:80%;
     width: auto;
     padding:15px
-    
+
+}
+
+.nav{
+    background-color: rgb(230, 230, 238);
+}
+.tiny {
+    height:20px;
+    width:auto;
+    margin:5px;
 }
 
 .bottom{
     align-content: center;
-    background-color: white;
+    background-color: rgb(230, 230, 238);
     color:#114CA0;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin:0px;
+    
+}
+
+img {
+    height:100px;
+    width: auto;
 }

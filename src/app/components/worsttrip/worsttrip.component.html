@@ -38,4 +38,31 @@
     <div class="row trip-duration">
         Total Travel Time: {{itinerary.totalTime}}
     </div>
+    <div class="bookIt">
+        <h4>Would You Like to Book This Trip?</h4>
+    </div>
+    <div class="row">
+            <div class="col">
+              <button class="btn btn-primary save-btn" (click)="save()">Confirm Trip</button>
+              <button class="btn btn-info" (click)="reset()">Go Back</button>
+            </div>
+        </div>
 </div>
+<div class="flyer-info">
+        <h2>Vertical (basic) form</h2>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="text">First Name:</label>
+            <input type="text" class="form-control" id="fName" placeholder="Enter First Name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="text">Last Name:</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" name="last">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="matches"> Name Matches Government Issued ID</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      

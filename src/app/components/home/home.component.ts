@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {SearchData} from "../../models";
-import {APIService} from "../../services/apiService";
+import { Router } from '@angular/router';
+
+import { SearchData } from '../../models';
+import { APIService } from '../../services/apiService';
 
 
 @Component({
@@ -10,28 +12,22 @@ import {APIService} from "../../services/apiService";
 })
 export class HomeComponent implements OnInit {
 
-  searchData:SearchData;
-  
+  searchData: SearchData;
 
-  constructor(
-    private apiService:APIService
-  ) { }
+  constructor(private router: Router, private apiService: APIService) { }
 
   ngOnInit() {
     this.searchData = new SearchData()
   }
 
-  
-
-  search(){
+  async search() {
     // use the search API to get the worst flight, then redirect to the /worstflight page
-    if(this.searchData.isValid()){
-      this.apiService.getItinerary(this.searchData);
+    if (this.searchData.isValid()) {
+      let itinerary = await this.apiService.getItinerary(this.searchData);
+      this.router.navigate(['/worsttrip'], { state: itinerary })
     }
-    else{
+    else {
       alert("invalid search criteria");
     }
-
   }
-
 }

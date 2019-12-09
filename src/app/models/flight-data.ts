@@ -1,5 +1,3 @@
-import {Locale} from "./locale";
-import {Duration} from "./duration";
 import { DatePipe } from '@angular/common';
 
 export class FlightData{

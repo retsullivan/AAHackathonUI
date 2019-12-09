@@ -35,3 +35,9 @@ img {
     height:100px;
     width: auto;
 }
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

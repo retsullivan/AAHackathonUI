@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { SearchData,FlightData} from '../models';
+import { Injectable } from '@angular/core';
 
 import { environment } from '../../environments/environment';
+import { SearchData } from '../models';
 import { Itinerary } from '../models/itinerary';
 
 @Injectable({

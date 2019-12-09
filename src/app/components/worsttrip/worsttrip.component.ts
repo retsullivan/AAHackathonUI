@@ -11,6 +11,8 @@ import { Itinerary } from 'src/app/models/itinerary';
 })
 export class WorsttripComponent implements OnInit {
 
+  display: boolean = false;
+
   itinerary: Observable<Itinerary>;
 
   constructor(private router: Router) { }
@@ -21,6 +23,9 @@ export class WorsttripComponent implements OnInit {
     if (null == this.itinerary['segments']) {
         this.router.navigateByUrl("/home");
     }
+  }
+  confirmTrip() {
+    this.display=true;
   }
 
 }

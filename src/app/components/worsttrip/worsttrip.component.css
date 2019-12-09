@@ -1,11 +1,11 @@
 .segment {
     border-radius: 10px;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #49b3f5;
 }
 
 .trip-duration {
     border-radius: 10px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #34ebe8;
 }

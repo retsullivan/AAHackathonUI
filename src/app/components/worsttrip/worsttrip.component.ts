@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Itinerary } from 'src/app/models/itinerary';
 
@@ -13,7 +12,7 @@ export class WorsttripComponent implements OnInit {
 
   itinerary: Observable<Itinerary>;
 
-  constructor(public activatedRoute: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
     this.itinerary = history.state

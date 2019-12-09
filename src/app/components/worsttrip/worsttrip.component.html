@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="row trip-duration">
+    <div class="row trip-duration" *ngIf="itinerary.totalTime">
         Total Travel Time: {{itinerary.totalTime}}
     </div>
 </div>

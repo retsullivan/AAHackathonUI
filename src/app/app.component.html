@@ -1,37 +1,34 @@
-  <div class = "top">
-    <div class="row">
-      <div class="breadcrumb-item active">
-                <img class="swlogo" src='./assets/SouthworstAirlinesWhite-03.png'>
-      </div>
+<div class="top">
+  <div class="row">
+    <div class="breadcrumb-item active">
+      <img class="swlogo" src='./assets/SouthworstAirlinesWhite-03.png'>
     </div>
   </div>
+</div>
 
-    <nav>
-      <ol class="breadcrumb">
-       
-        <div class = 'col col-sm-2'>
-            <img class='tiny' src='./assets/SouthworstAirlines-01-01-02.png'>
-            <a class='display-5' [routerLink]="['']">Book</a>   
-        </div> 
-        
-      </ol>
-    </nav>
-  
-    <div class='container'>
-      <div card='card'>
-        <router-outlet></router-outlet>
-      </div>
+<nav>
+  <ol class="breadcrumb">
+
+    <div class='col col-sm-2'>
+      <img class='tiny' src='./assets/SouthworstAirlines-01-01-02.png'>
+      <a class='display-5' [routerLink]="['']">Book</a>
     </div>
 
-  <div class ="bottom">
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-3"><img src='./assets/prez.png'></div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-3"><img src='./assets/SouthworstAirlines-01-01-02.png'></div>
-            <div class="col-sm-2"></div>
-      </div>
+  </ol>
+</nav>
+
+<div class='container'>
+  <div card='card'>
+    <router-outlet></router-outlet>
   </div>
+</div>
 
-
-
+<div class="bottom">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3"><img src='./assets/prez.png'></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3"><img src='./assets/SouthworstAirlines-01-01-02.png'></div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>

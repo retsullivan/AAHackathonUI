@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   //username: 'rachel',
-  baseUrl: 'https://localhost:8080'
+  baseUrl: 'http://localhost:8080'
 };
 /*
  * For easier debugging in development mode, you can import the following file

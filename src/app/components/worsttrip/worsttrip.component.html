@@ -1,2 +1,41 @@
-<p>worsttrip works!</p>
-{{itinerary.totalTime}}
+<h3>Your trip details:</h3>
+<div class="container">
+    <div class="row">
+        <div class='col'>
+            Origin:
+        </div>
+        <div class='col'>
+            Destination:
+        </div>
+        <div class='col'>
+            Flight Number:
+        </div>
+        <div class='col'>
+            Departure Time:
+        </div>
+        <div class='col'>
+            Arrival Time:
+        </div>
+    </div>
+    <div class="row segment" *ngFor="let segment of itinerary.segments">
+        <div class='col'>
+            {{segment.origin}}
+        </div>
+        <div class='col'>
+            {{segment.destination}}
+        </div>
+        <div class='col'>
+            {{segment.flightNumber}}
+        </div>
+        <div class='col'>
+            {{segment.departureTime | date: 'short'}}
+        </div>
+        <div class='col'>
+            {{segment.arrivalTime | date: 'short'}}
+        </div>
+    </div>
+
+    <div class="row trip-duration">
+        Total Travel Time: {{itinerary.totalTime}}
+    </div>
+</div>

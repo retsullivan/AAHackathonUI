@@ -11,6 +11,7 @@ import {APIService} from "../../services/apiService";
 export class HomeComponent implements OnInit {
 
   searchData:SearchData;
+  
 
   constructor(
     private apiService:APIService
@@ -18,16 +19,18 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.searchData = new SearchData()
-    this.searchData.origin="DFW";
-    this.searchData.destination="ORD";
-    this.searchData.date=new Date();
-
-    this.search(this.searchData);
   }
 
-  search(searchData:SearchData){
+  
+
+  search(){
     // use the search API to get the worst flight, then redirect to the /worstflight page
-    this.apiService.getItinerary(searchData);
+    if(this.searchData.isValid()){
+      this.apiService.getItinerary(this.searchData);
+    }
+    else{
+      alert("invalid search criteria");
+    }
 
   }
 

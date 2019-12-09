@@ -10,4 +10,7 @@ export class SearchData {
 
     }
 
+    isValid(){
+        return this.origin!=null && this.destination!=null&& this.date!=null;
+    }
 }
